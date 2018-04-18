@@ -17,11 +17,16 @@ app.Font.Edit3.send_keystrokes(u"17", with_spaces = True)
 app.Font.OK.Click()
 # Page setup
 app.UntitledNotepad.menu_select("File->Page setup...")
-app.Dialog[u'L&andscape'].Click()
 app.Dialog.ComboBox.Select(u'A5')
 app.Dialog.OK.send_keystrokes("{ENTER}")
 # Printing
-#app.UntitledNotepad.menu_select("File->Print...")
+app.UntitledNotepad.menu_select("File->Print...")
+app.Print.FolderView.GetItem("PDF Printer").Click()
+app.Print[u'&Print'].Click()
+
+#app.Notepad.menu_select("File->SaveAs")
+app.Window_(title_re=u'Save As', class_name='Dialog')[u'&Save'].Click()
+#app.SaveAs.EncodingComboBox.select("UTF-8")
 
 # Click on a button
 #app.AboutNotepad.OK.click()
