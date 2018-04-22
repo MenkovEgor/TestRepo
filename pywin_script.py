@@ -23,8 +23,10 @@ app.Dialog.OK.send_keystrokes("{ENTER}")
 app.UntitledNotepad.menu_select("File->Print...")
 app.Print.FolderView.GetItem("PDF Printer").Click()
 app.Print[u'&Print'].Click()
-#Attach to a PDF Printer process
 
+#app.Notepad.menu_select("File->SaveAs")
+app.Window_(title_re=u'Save As', class_name='Dialog')[u'&Save'].Click()
+#app.SaveAs.EncodingComboBox.select("UTF-8")
 
 # Click on a button
 #app.AboutNotepad.OK.click()

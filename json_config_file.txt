@@ -1,4 +1,4 @@
 {"version": "6.60.0.20265",
 "Error_levels": ["ERROR", "WARN"],
 "in_file_path": "Log_2017-07-24 07-32-13.log",
-"out_file_path": "NEWresults_new.txt"}
+"out_file_path": "Log_results.txt"}
