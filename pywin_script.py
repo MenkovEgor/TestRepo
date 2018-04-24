@@ -1,4 +1,7 @@
 from pywinauto.application import Application
+from time import gmtime, strftime
+
+
 # Run notepad application
 app = Application().start('notepad.exe')
 
@@ -40,6 +43,17 @@ app2 = Application().connect(path=r"C:\Program Files\PDF Printer for Windows 8\P
 app2.SaveAs.Wait('ready')
 
 #Saving PDF File
+app2.SaveAs.Wait('ready')
+app2.SaveAs.Edit.SetFocus()
+
+#Creating Unique Filename
+filename = strftime("%Y-%m-%d_%H-%M-%S", gmtime())
+filename = filename + ".PDF"
+app2.SaveAs.Edit.send_keystrokes(filename)
+
+#Saving
 app2.SaveAs.Save.Click()
+
+
 
 
