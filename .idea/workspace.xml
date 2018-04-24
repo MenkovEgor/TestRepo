@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c819f0d2-0300-41b4-b8e7-732f696792d0" name="Default" comment="">
+    <list default="true" id="c819f0d2-0300-41b4-b8e7-732f696792d0" name="Default" comment="Adding filename generation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pywin_script.py" afterPath="$PROJECT_DIR$/pywin_script.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -217,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524582671459</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding filename generation">
+      <created>1524585249911</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524585249911</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -251,7 +257,8 @@
     <MESSAGE value="Added the page editing and printing &#10;Save dialog left" />
     <MESSAGE value="Edited Json file" />
     <MESSAGE value="Fixed issue with attaching to PDF Printer process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with attaching to PDF Printer process" />
+    <MESSAGE value="Adding filename generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding filename generation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
